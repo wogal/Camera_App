@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Camera_App</string>
+    <string name="login_text">Login</string>
+    <string name="camera_text">Camera</string>
+</resources>

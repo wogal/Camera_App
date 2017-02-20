@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffa">
+    <TextView
+        android:id="@+id/top_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Personal Detail's"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:hint="User name"
+        android:textSize="40dp"
+        android:maxLines="1"
+        android:inputType="text|textNoSuggestions"
+        android:background="@drawable/boarder_style"
+        android:text=""
+        android:gravity="center"
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_textview"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:selectAllOnFocus="false" />
+
+    <EditText
+        android:maxLines="1"
+        android:hint="Password"
+        android:layout_margin="5dp"
+        android:id="@+id/password"
+        android:text=""
+        android:gravity="center"
+        android:layout_below="@id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:background="@drawable/boarder_style"
+        />
+    <Button
+        android:layout_margin="5dp"
+        android:background="@drawable/boarder_style"
+        android:text="Enter"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:textColor="#ffa2"
+        android:layout_below="@id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>
