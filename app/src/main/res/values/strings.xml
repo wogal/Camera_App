@@ -2,4 +2,7 @@
     <string name="app_name">Camera_App</string>
     <string name="login_text">Login</string>
     <string name="camera_text">Camera</string>
+    <string name="wogal">is earle</string>
+    <string name="fileToken">Wogals_IMAGE_.jpg</string>
+    <string name="test_image_path">/storage/emulated/0/Pictures/Wogals_IMAGE_.jpg</string>
 </resources>

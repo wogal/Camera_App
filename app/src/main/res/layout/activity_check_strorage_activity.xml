@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_check_strorage_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.egs.wogal.camera_app.check_strorage_activity">
+
+    <TextView
+        android:id="@+id/textview_dsu_top_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#F4517E"
+        android:text="Device Storage Path's"
+        android:textSize="35sp" />
+
+
+    <Button
+        android:id="@+id/button_dsu_write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_dsu_top_header"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_btn_login_background"
+        android:text="Write External"
+        android:textColor="@color/button_login_txt_colour"
+        android:textSize="@dimen/but_login_txt_size" />
+
+    <Button
+        android:id="@+id/button_dsu_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_dsu_write"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_btn_login_background"
+        android:text="Read External"
+        android:textColor="@color/button_login_txt_colour"
+        android:textSize="@dimen/but_login_txt_size" />
+
+    <Button
+        android:id="@+id/button_dsu_todo_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_dsu_read"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_btn_login_background"
+        android:text="Save Car Object"
+        android:textColor="@color/button_login_txt_colour"
+        android:textSize="15sp"
+        tools:text="Save Car Obj" />
+
+
+    <Button
+        android:id="@+id/button_dsu_todo_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_btn_login_background"
+        android:text="Recall Car Obj"
+        android:textColor="#9C27B0"
+        android:textSize="25sp"
+        android:layout_below="@+id/button_dsu_todo_1"/>
+
+    <TextView
+        android:layout_margin="20dp"
+        android:id="@+id/txtView_status"
+        android:layout_below="@id/button_dsu_todo_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="----"
+        android:textSize="24sp"
+        android:textColor="#F44336"
+        android:textAlignment="center" />
+
+
+</RelativeLayout>

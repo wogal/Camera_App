@@ -1,81 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/activity_main">
+    android:layout_height="match_parent">
 
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="----"
-    android:textSize="50dp"
-    android:gravity="center"
-    android:id="@+id/textview_top"
-    />
+
+    <TextView
+        android:id="@+id/textview_top_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="----"
+        android:textSize="50dp" />
 
 
     <Button
-        android:layout_below="@id/textview_top"
-    android:layout_margin="20dp"
-    android:background="@drawable/bg_btn_login_background"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/button_login"
-    android:textColor="@color/button_login_txt_colour"
-    android:textSize="@dimen/but_login_txt_size"
-    android:text="@string/login_text"
-    />
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_top_header"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_btn_login_background"
+        android:text="@string/login_text"
+        android:textColor="@color/button_login_txt_colour"
+        android:textSize="@dimen/but_login_txt_size" />
 
     <Button
+        android:id="@+id/button_camrea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/button_login"
         android:layout_margin="20dp"
         android:background="@drawable/bg_btn_login_background"
+        android:text="@string/camera_text"
+        android:textColor="@color/button_login_txt_colour"
+        android:textSize="@dimen/but_login_txt_size" />
+
+    <Button
+        android:id="@+id/button_fso_listView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button_camrea"
-        android:textColor="@color/button_login_txt_colour"
-        android:textSize="@dimen/but_login_txt_size"
-        android:text="@string/camera_text"
-        />
-    <Button
         android:layout_below="@id/button_camrea"
         android:layout_margin="20dp"
         android:background="@drawable/bg_btn_login_background"
+        android:text="F.S.O List View"
+        android:textColor="@color/button_login_txt_colour"
+        android:textSize="@dimen/but_login_txt_size" />
+
+    <Button
+        android:id="@+id/button_test_storage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button_testCode"
-        android:textColor="@color/button_login_txt_colour"
-        android:textSize="@dimen/but_login_txt_size"
-        android:text="Test Code"
-        />
+        android:layout_below="@id/button_fso_listView"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_btn_login_background"
+        android:text="DSU Device Storage Utility"
+        android:textColor="#FF5722"
+        android:textSize="20sp" />
 
-
-    <android.support.v7.widget.RecyclerView
-        android:visibility="gone"
-        android:id="@+id/rv_drops"
-        android:layout_below="@id/button_camrea"
+    <Button
+        android:id="@+id/but_start_forSaleObj"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </android.support.v7.widget.RecyclerView>
-
-    <ImageView
-
-        android:layout_below="@id/button_testCode"
-        android:contentDescription="---"
-        android:id="@+id/capturePhotoImage"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true" />
-
-
-    <TextureView
-        android:visibility="gone"
-        android:layout_below="@id/button_testCode"
-        android:contentDescription="---"
-        android:id="@+id/textureView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true" />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_test_storage"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_btn_login_background"
+        android:text="Start For Sale Obj"
+        android:textColor="#FF5722"
+        android:textStyle="bold"
+        android:textSize="25sp" />
 
 
 </RelativeLayout>
